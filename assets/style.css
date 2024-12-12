@@ -18,33 +18,30 @@
 
 
     /* - //PADDING// - */
-    --main-padding: 130px 220px;
+    --main-padding: 8.125rem 13.75rem;
 }
 
 .body {
     box-sizing: border-box;
     margin: 0 auto;
-    min-height: 100vh;
-    max-width: auto;
+    max-width: 100vh;
 }
 
 .head {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 200px 800px 220px 210px;
+    gap: 2.5rem;
+    padding: 12.5rem 50rem 13.75rem 13.12rem;
     background-image: url(/img/Background.png);
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
-    background-position-x: left;
 
     & .container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 588px;
+        width: 36.75rem;
         
     }
 
@@ -57,7 +54,7 @@
 
     & .vetores {
         display: flex;
-        width: 588px;
+        width: 36.75rem;
         justify-content: center;
     }
 
@@ -71,8 +68,8 @@
     & .assinar12 {
         background-color: var(--secondary-color);
         text-decoration: none;
-        width: 512px;
-        border-radius: 8px;
+        width: 32rem;
+        border-radius: 0.5rem;
         font-family: var(--main-font);
         text-align: center;
         color: var(--main-color);
@@ -87,7 +84,7 @@
         text-decoration: none;
         text-align: center;
         font-family: var(--main-font);
-        font-size: 16px;
+        font-size: 1rem;
         border: 1px solid var(--main-color);
         border-radius: 0.5rem;
         width: 32rem;
@@ -98,7 +95,7 @@
         color: var(--p-color);
         font-family: var(--main-font);
         font-size: 0.75rem;
-        width: 588px;
+        width: 36.75rem;
         text-align: center;
         
     }
@@ -107,7 +104,7 @@
 main {
     background-color: var(--background-color);
     color: #FFFFFF;
-    padding: 0 120px 0 165px;
+    padding: 0 7.5rem 0 10.312rem;
 
     & .principal {
         display: flex;
@@ -119,7 +116,7 @@ main {
         display: flex;
         justify-content: space-between;
         padding: var(--main-padding);
-        gap: 70px;
+        gap: 4.375rem;
     }
 
     & .imagem1 {
@@ -150,7 +147,7 @@ main {
     & .parte2 {
         display: flex;
         flex-direction: row-reverse;
-        gap: 70px;
+        gap: 4.375rem;
         padding: var(--main-padding);
     }
 
@@ -187,7 +184,7 @@ main {
 
     & .parte3 {
         display: flex;
-        gap: 70px;
+        gap: 4.375rem;
         padding: var(--main-padding);
     }
 
@@ -229,31 +226,31 @@ main {
     & .dispositivos {
         display: flex;
         justify-content: space-between;
-        padding:  0 250px 145px 250px;
+        padding:  0 15.62rem 9.062rem 15.62rem;
     }
 
     & h1 {
         font-family: var(--main-font);
-        font-size: 32px;
+        font-size: 2rem;
         text-align: center;
     }
 
     & .tv {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 1rem;
     }
 
     & .computador {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 1rem;
     }
 
     & .celular {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 1rem;
     }
 }
 
@@ -262,16 +259,16 @@ footer {
 
     & .rodape__vetor {
         text-align: center;
-        padding: 40px 0;
+        padding: 2.5rem 0;
     }
 
     & .rodape__links {
         display: flex;
-        gap: 16px;
+        gap: 1rem;
         justify-content: center;
         font-family: var(--main-font);
-        font-size: 16px;
-        padding: 0 0 24px 0;
+        font-size: 1rem;
+        padding: 0 0 1.5rem 0;
     }
 
     & .rodape__links__link {
@@ -282,8 +279,19 @@ footer {
     & .rodape__p {
         color: var(--p-color);
         font-family: var(--main-font);
-        font-size: 14px;
+        font-size: 0.875rem;
         text-align: center;
-        padding: 0 380px 80px 380px;
+        padding: 0 23.75rem 5rem 23.75rem;
+    }
+}
+
+@media (max-width: 1432px) {
+    .head {
+        background-image: none;
+        background-color: var(--background-color);
+    }
+
+    .container {
+        align-items: center;
     }
 }
